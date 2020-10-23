@@ -1,0 +1,93 @@
+[
+    {
+        "project_folder": "/home/leon3428/dev/satelliteSeg/dsboard_project/",
+        "project_name": "SatSeg"
+    },
+    {
+        "plot_type": "image",
+        "data_file": "model.png",
+        "plot_name": "model"
+    },
+    {
+        "plot_type": "chart",
+        "plot_name": "loss",
+        "x_axis": {
+            "label": "epoch"
+        },
+        "y_axis": {
+            "label": "mse",
+            "begin_at_zero": false
+        },
+        "data":[
+            {
+                "label": "train",
+                "data_file": "trainLoss.data",
+                "line_tension": 0
+            },
+            {
+                "label": "val",
+                "data_file": "valLoss.data",
+                "line_tension": 0
+            }
+        ]
+    },
+    {
+        "plot_type": "chart",
+        "plot_name": "dice",
+        "x_axis": {
+            "label": "epoch"
+        },
+        "y_axis": {
+            "label": "dice",
+            "begin_at_zero": false
+        },
+        "data":[
+            {
+                "label": "train",
+                "data_file": "trainDice.data",
+                "line_tension": 0
+            },
+            {
+                "label": "val",
+                "data_file": "valDice.data",
+                "line_tension": 0
+            }
+        ]
+    },
+    {
+        "plot_type": "chart",
+        "plot_name": "batch loss",
+        "x_axis": {
+            "label": "batch"
+        },
+        "y_axis": {
+            "label": "loss",
+            "begin_at_zero": false
+        },
+        "data":[
+            {
+                "label": "train",
+                "data_file": "loss.data",
+                "line_tension": 0
+            }
+        ]
+    },
+    {
+        "plot_type": "chart",
+        "plot_name": "lr",
+        "x_axis": {
+            "label": "epoch"
+        },
+        "y_axis": {
+            "label": "lr",
+            "begin_at_zero": false
+        },
+        "data":[
+            {
+                "label": "lr",
+                "data_file": "lr.data",
+                "line_tension": 0
+            }
+        ]
+    }
+]
